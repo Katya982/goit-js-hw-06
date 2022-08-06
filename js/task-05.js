@@ -6,11 +6,13 @@ function onInputAction(event) {
     const valueInput = event.currentTarget.value;
 
     if (valueInput.length === ' ') {
-        return nameInput.textContent = 'Anonimus';
+        return nameInput.textContent = 'Anonymous';
     }
 
     nameInput.textContent = valueInput;
 
 }
 
-input.addEventListener('input', onInputAction)
+input.addEventListener('input', onInputAction);
+
+

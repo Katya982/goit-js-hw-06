@@ -9,12 +9,12 @@ function onFormSubmit(event) {
         elements = { email, password },
     } = event.currentTarget;
     
-    alert(elements.email.value);
+    console.log(elements.email.value);
 
   if (elements.email.value === "" || elements.password.value === "") {
-      return alert("Please fill in all the fields!");
+      return console.log("Please fill in all the fields!");
   }
 
     console.log(`Login: ${elements.email.value}, Password: ${elements.password.value}`);
   event.currentTarget.reset()
-}
+};
